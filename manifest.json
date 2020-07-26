@@ -1,7 +1,7 @@
 {
-    "name": "Toggle Sites",
-    "version": "0.0.1",
-    "description": "Easily block or unblock sites by specifying them in a simple list.",
+    "name": "Simple Toggle Sites",
+    "version": "1.0.0",
+    "description": "A very basic extension to quickly block or unblock a list of websites.",
     "permissions": [
         "storage", 
         "webRequest", 
