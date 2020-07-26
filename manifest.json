@@ -1,0 +1,19 @@
+{
+    "name": "Toggle Sites",
+    "version": "0.0.1",
+    "description": "Easily block or unblock sites by specifying them in a simple list.",
+    "permissions": [
+        "storage", 
+        "webRequest", 
+        "webRequestBlocking",
+        "http://*/",
+        "https://*/"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
