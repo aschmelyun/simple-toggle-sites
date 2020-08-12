@@ -9,6 +9,10 @@ activeOn.addEventListener('click', function(e) {
     activeOn.classList.add('is-active');
     activeOff.classList.remove('is-active');
     localStorage.setItem('toggleSitesActive', true);
+
+    chrome.browserAction.setIcon({
+        path: 'dist/images/icon-16x16.png'
+    });
 });
 
 activeOff.addEventListener('click', function(e) {
@@ -17,6 +21,10 @@ activeOff.addEventListener('click', function(e) {
     activeOff.classList.add('is-active');
     activeOn.classList.remove('is-active');
     localStorage.setItem('toggleSitesActive', false);
+
+    chrome.browserAction.setIcon({
+        path: 'dist/images/icon-16x16-off.png'
+    });
 });
 
 var save = document.getElementById('save');
