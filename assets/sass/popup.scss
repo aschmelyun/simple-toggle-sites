@@ -27,21 +27,21 @@ button:focus {
     outline: 0;
 }
 .buttons > button.state-on {
-    border: 1px solid #2ecc71;
-    color: #2ecc71;
-}
-.buttons > button.state-on.is-active {
-    border: 1px solid #2ecc71;
-    background: #2ecc71;
-    color: #fff;
-}
-.buttons > button.state-off {
     border: 1px solid #e74c3c;
     color: #e74c3c;
 }
-.buttons > button.state-off.is-active {
+.buttons > button.state-on.is-active {
     border: 1px solid #e74c3c;
     background: #e74c3c;
+    color: #fff;
+}
+.buttons > button.state-off {
+    border: 1px solid #7f8c8d;
+    color: #7f8c8d;
+}
+.buttons > button.state-off.is-active {
+    border: 1px solid #7f8c8d;
+    background: #7f8c8d;
     color: #fff;
 }
 .sites {
