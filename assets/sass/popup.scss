@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: anti-aliased;
 }
 .title {
-    font-size: 27px;
+    font-size: 24px;
     color: #2c3e50;
 }
 .buttons {
@@ -18,20 +18,38 @@ body {
             border: 1px solid #e74c3c;
             color: #e74c3c;
 
-            &.is-active {
+            &.is-active,
+            &:hover {
                 border: 1px solid #e74c3c;
                 background: #e74c3c;
                 color: #fff;
+            }
+            &:active {
+                border: 1px solid #e74c3c;
+                background: darken(#e74c3c, 5%);
+                color: #fff;
+            }
+            &:focus {
+                box-shadow: 0 0 0 2px lighten(#e74c3c, 20%);
             }
         }
         &.state-off {
             border: 1px solid #7f8c8d;
             color: #7f8c8d;
 
-            &.is-active {
+            &.is-active,
+            &:hover {
                 border: 1px solid #7f8c8d;
                 background: #7f8c8d;
                 color: #fff;
+            }
+            &:active {
+                border: 1px solid #7f8c8d;
+                background: darken(#7f8c8d, 5%);
+                color: #fff;
+            }
+            &:focus {
+                box-shadow: 0 0 0 2px lighten(#7f8c8d, 20%);
             }
         }
     }
@@ -50,11 +68,21 @@ button {
     &:focus {
         outline: 0;
     }
+    &:hover {
+        cursor: pointer;
+    }
     &.state-save {
         background: #2c3e50;
         color: #fff;
         width: 100%;
         padding: 8px 24px;
+
+        &:active {
+            background: darken(#2c3e50, 5%);
+        }
+        &:focus {
+            box-shadow: 0 0 0 2px lighten(#2c3e50, 20%);
+        }
     }
 }
 .sites {
