@@ -10,7 +10,11 @@ chrome.webRequest.onBeforeRequest.addListener(
         var active = localStorage.getItem('toggleSitesActive');
         if (active === 'true') {
             var sites = localStorage.getItem('toggleSitesList').split(/\n/);
-            cancel = sites.some(site => details.url.indexOf(site) !== -1);
+            cancel = sites.some(site => {
+                var url = new URL(details.url);
+
+                return Boolean(url.hostname.indexOf(site) !== -1);
+            });
         }
 
         return {
