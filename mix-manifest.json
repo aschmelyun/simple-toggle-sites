@@ -1,4 +1,9 @@
 {
-    "/dist/js/popup.js": "/dist/js/popup.js?id=e8d6a6dbdae4610ccf98",
-    "/dist/css/popup.css": "/dist/css/popup.css?id=6d3001d2ad52222bdfed"
+    "/dist/js/background.js": "/dist/js/background.js",
+    "/dist/js/popup.js": "/dist/js/popup.js",
+    "/dist/css/popup.css": "/dist/css/popup.css",
+    "/dist/images/icon-128x128.png": "/dist/images/icon-128x128.png",
+    "/dist/images/icon-16x16.png": "/dist/images/icon-16x16.png",
+    "/dist/images/icon-48x48-off.png": "/dist/images/icon-48x48-off.png",
+    "/dist/images/icon-48x48.png": "/dist/images/icon-48x48.png"
 }
